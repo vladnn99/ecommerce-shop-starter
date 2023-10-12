@@ -23,7 +23,7 @@ const CartItem = ({ item }) => {
             {/* title */}
             <Link
               className="text-sm uppercase font-medium max-w-[240px] text-primary hover:underline"
-              to={`product/${id}`}
+              to={`/product/${id}`}
             >
               {title}
             </Link>
@@ -67,7 +67,7 @@ const CartItem = ({ item }) => {
             </div>
             {/* item price */}
             <div className="flex-1 flex items-center justify-around">
-              $ {price}
+              $ {parseFloat(price).toFixed(2)}
             </div>
             {/* final price */}
             {/* 2 decimal price */}

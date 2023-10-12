@@ -48,7 +48,7 @@ const Product = ({ product }) => {
         <Link to={`/product/${id}`}>
           <h2 className="font-semibold">{title}</h2>
         </Link>
-        <div className="font-semibold">$ {price}</div>
+        <div className="font-semibold">$ {parseFloat(price).toFixed(2)}</div>
       </div>
     </div>
   );

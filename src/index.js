@@ -11,13 +11,13 @@ import CartProvider from "./contexts/CartContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <SidebarProvider>
-    <CartProvider>
-      <ProductProvider>
-        <React.StrictMode>
+  <React.StrictMode>
+    <SidebarProvider>
+      <CartProvider>
+        <ProductProvider>
           <App />
-        </React.StrictMode>
-      </ProductProvider>
-    </CartProvider>
-  </SidebarProvider>
+        </ProductProvider>
+      </CartProvider>
+    </SidebarProvider>
+  </React.StrictMode>
 );

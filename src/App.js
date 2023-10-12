@@ -7,6 +7,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CartView from "./components/CartView";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cartview" element={<CartView />} />
         </Routes>
         <Sidebar />
         <Footer />
