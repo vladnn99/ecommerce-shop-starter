@@ -15,16 +15,18 @@ const Product = ({ product }) => {
       <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
         <div className="w-full h-full flex justify-center items-center">
           {/* image */}
-          <div className="w-[200px] mx-auto flex justify-center items-center">
-            <img
-              className="max-h-[160px] group-hover:scale-110 transition duration-300"
-              src={image}
-              alt=""
-            />
+          <div className="w-[200px] mx-auto flex justify-center items-center cursor-pointer">
+            <Link to={`/product/${id}`}>
+              <img
+                className="max-h-[160px] md:group-hover:scale-110 transition duration-300"
+                src={image}
+                alt=""
+              />
+            </Link>
           </div>
         </div>
         {/* buttons */}
-        <div className="absolute top-6  -right-11 group-hover:right-5 p-2 flex flex-col items-center justify-center gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+        <div className="absolute right-5 top-6 md:-right-11 md:group-hover:right-5 p-2 flex flex-col items-center justify-center gap-y-2 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300">
           <button
             onClick={() => {
               addToCart(product, id);
