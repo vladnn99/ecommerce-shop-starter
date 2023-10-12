@@ -43,6 +43,9 @@ const ProductDetails = () => {
               <h1 className="text-[26px] font-medium max-w-[450px] mx-auto lg:mx-0">
                 {title}
               </h1>
+              <p className="text-gray-600 bg-gray-200 w-fit px-2 py-1 mt-2 mb-1 rounded-md text-sm">
+                {category}
+              </p>
               <div className="text-xl text-red-500 font-medium mb-6">{`$ ${parseFloat(
                 price
               ).toFixed(2)}`}</div>
